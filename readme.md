@@ -2,7 +2,7 @@
 
 This is a laravel 5 working with php 7.4 and mysql 5.7
 
-#Learned about rebuilding mysql in laradock
+# Learned about rebuilding mysql in laradock
 
     # Modify .env file
      MYSQL_VERSION=5.7 # default is latest
