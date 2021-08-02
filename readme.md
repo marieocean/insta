@@ -25,7 +25,7 @@ This is a laravel 5 working with php 7.4 and mysql 5.7
 
 src : https://www.programmersought.com/article/2540824196/
 
-#first step authentication
+## First step authentication
 
 Forgot password is not working
 Error log is not found
