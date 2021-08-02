@@ -1,27 +1,31 @@
-# Laravel PHP Framework
+# Laravel PHP Framework using laradock
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+This is a laravel 5 working with php 7.4 and mysql 5.7
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+#Learned about rebuilding mysql in laradock
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+    # Modify .env file
+     MYSQL_VERSION=5.7 # default is latest
+     
+     # mysql container
+    docker-compose stop mysql
+     
+     # Delete old database data
+    rm -rf ~/.laradock/data/mysql
+     
+     # ! Pay attention to restart the docker application, and then build a new mysql
+    docker-compose build mysql
+     
+       # Recreate the container
+    docker-compose up -d nginx mysql
+     
+     # View existing mysql version
+    docker inspect laradock_mysql_1
 
-## Official Documentation
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+src : https://www.programmersought.com/article/2540824196/
 
-## Contributing
+#first step authentication
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Forgot password is not working
+Error log is not found
