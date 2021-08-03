@@ -29,3 +29,11 @@ src : https://www.programmersought.com/article/2540824196/
 
 Forgot password is not working
 Error log is not found
+
+
+## Design
+
+How to set another bootstrap version
+How to compile the scss
+Why the data content disappears when fixing width
+How to include the font family
