@@ -37,3 +37,7 @@ How to set another bootstrap version
 How to compile the scss
 Why the data content disappears when fixing width
 How to include the font family
+
+#Authentication
+Learned that tinker needs namespace in this version
+App\User::all() instead of User::all();
