@@ -41,3 +41,11 @@ How to include the font family
 #Authentication
 Learned that tinker needs namespace in this version
 App\User::all() instead of User::all();
+
+## Creating a profile
+Issues to be dealed with later
+5.3 did not have the routes/web.php
+ProfileController was created as read-only when using php artisan
+command php artisan make:controller ProfileController
+
+what is the difference between routes and web in both versions

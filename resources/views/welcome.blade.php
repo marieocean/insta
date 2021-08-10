@@ -22,7 +22,7 @@
             <div>
                 <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.freecodecamp.org%2F&amp;e=ATPuvwEBWqPVB8otl53sE3UFiKePBkm9Nm2GInfP86UBGvmD9nazkO282cGnERReglYIEHXjagG_PCL5&amp;s=1" page_id="profilePage" rel="me nofollow noopener noreferrer" target="_blank">www.freecodecamp.org</a>
             </div>
-            
+
         </div>
     </div>
     <div class="row" style="padding-top : 30px">
