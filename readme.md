@@ -55,3 +55,5 @@ here is the command on terminal to display logs on laradoc
 docker logs -f --details laradock_php-fpm_1 
 
 ## How to display a 404 (mine is error logs) 
+
+## Cascading deletion in relationship

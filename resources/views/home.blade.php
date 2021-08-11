@@ -7,7 +7,12 @@
             <img style="width: 200px;padding-top: 15px;" src="/img/freecodecamp.png">
         </div>
         <div class="col-md-9" style="padding-left: 20px">
-            <div ><h1>{{$user->username }}</h1></div>
+            <div >
+                <h1>{{$user->username }}</h1>
+            </div>
+            <div class="display:inline">
+                <a class="btn btn-primary" style="margin-bottom: 30px" href="#">Add a new post</a>
+            </div>
             <div class="row" style="margin-left:0px!important">
                 <div class="col-md-3" style="padding-left: 0px!important"><strong>396</strong> posts</div>
                 <div class="col-md-3"><strong>77.5 k</strong> followers</div>
