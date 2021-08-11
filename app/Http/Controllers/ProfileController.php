@@ -15,7 +15,8 @@ class ProfileController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($user = "empty") {
-        $user = User::find($user);
+        $user = User::findOrFail($user);
+
         return view('home', [
             "user" => $user
                 ]
