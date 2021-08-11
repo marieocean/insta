@@ -14,13 +14,12 @@
                 <div class="col-md-3"><strong>315</strong> following</div>
             </div>
             <div>
-                <strong>freeCodeCamp.org</strong>
+                <strong>{{$user->profile->title }}</strong>
             </div>
             <div>
-                We're a global community of millions of people learning to code together. We're an open source, donor-supported, 501(c)(3) nonprofit.
-            </div>
+                {{$user->profile->description }} </div>
             <div>
-                <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.freecodecamp.org%2F&amp;e=ATPuvwEBWqPVB8otl53sE3UFiKePBkm9Nm2GInfP86UBGvmD9nazkO282cGnERReglYIEHXjagG_PCL5&amp;s=1" page_id="profilePage" rel="me nofollow noopener noreferrer" target="_blank">www.freecodecamp.org</a>
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.freecodecamp.org%2F&amp;e=ATPuvwEBWqPVB8otl53sE3UFiKePBkm9Nm2GInfP86UBGvmD9nazkO282cGnERReglYIEHXjagG_PCL5&amp;s=1" page_id="profilePage" rel="me nofollow noopener noreferrer" target="_blank">{{$user->profile->url }}</a>
             </div>
 
         </div>

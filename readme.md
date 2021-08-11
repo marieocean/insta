@@ -49,3 +49,7 @@ ProfileController was created as read-only when using php artisan
 command php artisan make:controller ProfileController
 
 what is the difference between routes and web in both versions
+
+## Logs
+here is the command on terminal to display logs on laradoc
+docker logs -f --details laradock_php-fpm_1 
