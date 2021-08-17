@@ -17,7 +17,7 @@ class ProfileController extends Controller
     public function show($user = "empty") {
         $user = User::findOrFail($user);
 
-        return view('home', [
+        return view('profiles.index', [
             "user" => $user
                 ]
         );

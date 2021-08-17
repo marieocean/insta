@@ -7,3 +7,5 @@
  */
 
 Route::get('/profile', 'ProfileController@index')->name('profile.show');
+
+Route::get('/p', 'PostsController@create')->name('p.create');
