@@ -57,3 +57,17 @@ docker logs -f --details laradock_php-fpm_1
 ## How to display a 404 (mine is error logs) 
 
 ## Cascading deletion in relationship
+
+## TODO : 1h 45m
+
+## Csrf
+In Laravel 5.6, csrf file is not @csrf
+but {{ csrf_field() }}
+You can use {{ csrf_token() }} if you want to generate a token
+
+## Validation
+$this->validate(request(), [
+            "caption" => "required",
+            "image" => ["required", "image"]
+        ]);
+instead $request()->validate()
