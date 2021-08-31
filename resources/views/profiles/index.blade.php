@@ -11,7 +11,7 @@
                 <h1 >{{$user->username }}</h1>
             </div>
             <div class="col-md-6">
-                <a class="btn btn-primary" style="margin-top: 25px;" href="#">Add a new post</a>
+                <a class="btn btn-primary" style="margin-top: 25px;" href="/p/create">Add a new post</a>
             </div>
         </div>
         <div class="col-md-9" style="padding-left: 20px">
@@ -21,7 +21,7 @@
                 <div class="col-md-3"><strong>315</strong> following</div>
             </div>
             <div>
-                <strong>{{$user->profile->title }}</strong>
+                <strong>{{$user->profile->caption }}</strong>
             </div>
             <div>
                 {{$user->profile->description }} </div>
@@ -32,15 +32,11 @@
         </div>
     </div>
     <div class="row" style="padding-top : 30px">
-        <div class="col-md-4">
-            <img style="width: 100%" src="/img/image1.jpeg">
+        @foreach ($user->posts as $post)
+        <div class="col-md-4" style="margin-bottom :20px">
+            <img style="width: 100%" src="/{{$post->image}}">
         </div>
-        <div class="col-md-4">
-            <img style="width: 100%" src="/img/image2.jpeg">
-        </div>
-        <div class="col-md-4">
-            <img style="width: 100%" src="/img/image3.jpeg">
-        </div>
+        @endforeach
     </div>
 </div>
 @endsection
