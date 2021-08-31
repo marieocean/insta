@@ -58,8 +58,6 @@ docker logs -f --details laradock_php-fpm_1
 
 ## Cascading deletion in relationship
 
-## TODO : 1h 45m
-
 ## Csrf
 In Laravel 5.6, csrf file is not @csrf
 but {{ csrf_field() }}
@@ -71,3 +69,18 @@ $this->validate(request(), [
             "image" => ["required", "image"]
         ]);
 instead $request()->validate()
+
+## TODO : 02h 05m
+
+## To save file
+### config file system to the storage_path 
+ 'public' => [
+            'driver' => 'local',
+            'root' => storage_path('storage/public'),
+            'visibility' => 'public',
+        ],
+
+
+### save a file
+$image = $request->file('image');
+$image->move('uploads', $image->getClientOriginalName());
